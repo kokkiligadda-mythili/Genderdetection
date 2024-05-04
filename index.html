@@ -13,56 +13,48 @@
 
     .container {
       display: flex;
-      flex-direction: column; /* Arrange content vertically */
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      height: 100vh; /* Full viewport height */
+      height: 800px; 
       background-image: url('bg.jpg');
       background-size: cover;
       background-position: center;
-      padding: 20px;
+      padding: 0 20px;
     }
 
     .content {
-      width: 100%;
-      text-align: center;
+      width: 50%;
       color: white;
-      margin-bottom: 20px;
     }
 
     .left-content {
+      text-align: left;
       background-image: url("textbg.jpg");
       background-size: cover;
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      margin-left: 10px;
+      margin-left: 40px;
     }
 
     .right-content {
-      margin-top: 20px; /* Add some space between content */
+      text-align: left;
     }
 
     h1 {
-      font-size: 8vw; /* Responsive font size */
-      margin-top: 0;
-      margin-bottom: 20px;
+      font-size: 80px;
+      margin-top: 0px;
+      margin-bottom: 50px;
     }
 
     form {
       border: 1px solid white;
-      max-width: 100%;
-      width: 300px; /* Adjust width for smaller screens */
+      width: 600px; /* Adjust width as needed */
       padding: 20px;
       text-align: center;
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.3); /* Adjust background opacity */
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    }
-
-    input[type="file"] {
-      width: 100%;
-      margin-bottom: 20px; /* Add space between elements */
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add a shadow */
     }
 
     input[type="submit"] {
@@ -73,11 +65,11 @@
       cursor: pointer;
       border-radius: 5px;
     }
-
-    label {
-      font-size: 4vw; /* Responsive font size */
-      color: white;
+    label{
+        font-size: 20px;
+        color: rgb(127, 192, 224);
     }
+   
   </style>
 </head>
 <body>
