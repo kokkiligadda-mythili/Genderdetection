@@ -1,108 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gender Detection</title>
-  <style>
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 800px; 
-      background-image: url('bg.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 0 20px;
-    }
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
 
-    .content {
-      width: 50%;
-      color: white;
-    }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; 
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0 20px;
+}
 
-    .left-content {
-      text-align: left;
-      background-image: url("textbg.jpg");
-      background-size: cover;
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      margin-left: 40px;
-    }
+.content {
+  width: 50%;
+  color: white;
+}
 
-    .right-content {
-      text-align: left;
-    }
+.left-content {
+  text-align: left;
+  background-image: url("textbg.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-left: 40px;
+}
 
-    h1 {
-      font-size: 80px;
-      margin-top: 0px;
-      margin-bottom: 50px;
-    }
+.right-content {
+  text-align: left;
+}
 
-    form {
-      border: 1px solid white;
-      width: 600px;
-      padding: 20px;
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.3);
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    }
+h1 {
+  font-size: 80px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
 
-    input[type="submit"] {
-      background-color: rgb(7, 156, 243);
-      color: rgb(237, 241, 243);
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    label{
-        font-size: 20px;
-        color: white;
-    }
-    @media screen and (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        height: auto;
-      }
+form {
+  border: 1px solid white;
+  width: 600px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
 
-      .content {
-        width: 100%;
-        height: 100%;
-      }
+input[type="submit"] {
+  background-color: rgb(7, 156, 243);
+  color: rgb(237, 241, 243);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
-      h1 {
-        font-size: 8vw;
-        margin-bottom: 5vw;
-      }
+label{
+    font-size: 20px;
+    color: white;
+}
 
-      form {
-        width: 90%; 
-        height: 60%;
-        padding: 5vw;
-      }
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
 
-      label {
-        font-size: 3vw;
-      }
-    }       
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="content left-content">
-      <h1>VOICE BASED<br>GENDER DETECTION</h1>
-    </div>
-    <div class="content right-content">
-      <form action="">
-        <label for="voiceInput">Upload an audio file:</label><br><br>
-        <input type="file" id="voiceInput" name="voiceInput" accept="audio/*"><br><br>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </div>
-</body>
-</html>
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 8vw;
+    margin-bottom: 5vw;
+  }
+
+  form {
+    width: 90%; 
+    height: 60%;
+    padding: 5vw;
+  }
+
+  label {
+    font-size: 3vw;
+  }
+}
