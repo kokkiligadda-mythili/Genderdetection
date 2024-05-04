@@ -44,8 +44,7 @@
 
     form {
       border: 1px solid white;
-      width: 600px;
-      height: 400px; /* Adjust width as needed */
+      width: 600px; /* Adjust width as needed */
       padding: 20px;
       text-align: center;
       background-color: rgba(255, 255, 255, 0.3); /* Adjust background opacity */
@@ -61,6 +60,11 @@
       cursor: pointer;
       border-radius: 5px;
     }
+    label{
+        font-size: 20px;
+        color: white;
+    }
+   
   </style>
 </head>
 <body>
@@ -70,6 +74,8 @@
     </div>
     <div class="content right-content">
       <form action="">
+        <label for="voiceInput">Upload an audio file:</label><br><br>
+        <input type="file" id="voiceInput" name="voiceInput" accept="audio/*"><br><br>
         <input type="submit" value="Submit">
       </form>
     </div>
