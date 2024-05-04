@@ -8,15 +8,15 @@
     body {
       margin: 0;
       padding: 0;
+      font-family: Arial, sans-serif; /* Add a fallback font */
     }
 
     .container {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column; /* Arrange content vertically */
+      justify-content: center;
       align-items: center;
-      flex-wrap: wrap; /* Allow content to wrap on smaller screens */
-      height: auto; /* Adjust height to fit content */
-      min-height: 100vh; /* Ensure container fills the viewport height */
+      height: 100vh; /* Full viewport height */
       background-image: url('bg.jpg');
       background-size: cover;
       background-position: center;
@@ -24,10 +24,10 @@
     }
 
     .content {
-      width: 100%; /* Take up full width on smaller screens */
+      width: 100%;
+      text-align: center;
       color: white;
-      text-align: center; /* Center content */
-      margin-bottom: 20px; /* Add some space between content */
+      margin-bottom: 20px;
     }
 
     .left-content {
@@ -36,34 +36,33 @@
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      margin-left: 40px;
+      margin-left: 10px;
     }
 
     .right-content {
-      margin-left: 0; /* Remove left margin */
+      margin-top: 20px; /* Add some space between content */
     }
 
     h1 {
-      font-size: 6vw; /* Responsive font size */
-      margin-top: 0; /* Remove default margin */
-      margin-bottom: 2vw; /* Responsive margin */
+      font-size: 8vw; /* Responsive font size */
+      margin-top: 0;
+      margin-bottom: 20px;
     }
 
     form {
       border: 1px solid white;
-      max-width: 100%; /* Adjust width to fit smaller screens */
-      width: 400px; /* Default width */
-      margin: 0 auto; /* Center form */
+      max-width: 100%;
+      width: 300px; /* Adjust width for smaller screens */
       padding: 20px;
       text-align: center;
-      background-color: rgba(255, 255, 255, 0.3); /* Adjust background opacity */
+      background-color: rgba(255, 255, 255, 0.3);
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add a shadow */
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     }
 
     input[type="file"] {
-      width: 100%; /* Take up full width */
-      margin-bottom: 10px; /* Add some space between elements */
+      width: 100%;
+      margin-bottom: 20px; /* Add space between elements */
     }
 
     input[type="submit"] {
@@ -76,7 +75,7 @@
     }
 
     label {
-      font-size: 3vw; /* Responsive font size */
+      font-size: 4vw; /* Responsive font size */
       color: white;
     }
   </style>
