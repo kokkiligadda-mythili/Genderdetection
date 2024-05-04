@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gender Detection</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      height: 800px; 
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 0 20px;
+    }
+
+    .content {
+      width: 50%;
+      color: white;
+    }
+
+    .left-content {
+      text-align: left;
+      background-image: url("textbg.jpg");
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-left: 40px;
+    }
+
+    .right-content {
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 80px;
+      margin-top: 0px;
+      margin-bottom: 50px;
+    }
+
+    form {
+      border: 1px solid white;
+      width: 600px;
+      height: 400px; /* Adjust width as needed */
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.3); /* Adjust background opacity */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add a shadow */
+    }
+
+    input[type="submit"] {
+      background-color: rgb(7, 156, 243);
+      color: rgb(237, 241, 243);
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content left-content">
+      <h1>VOICE BASED<br>GENDER DETECTION</h1>
+    </div>
+    <div class="content right-content">
+      <form action="">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
