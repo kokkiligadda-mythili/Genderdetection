@@ -5,25 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gender Detection</title>
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
     .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      
-      height: 800px; 
+      flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+      height: auto; /* Adjust height to fit content */
+      min-height: 100vh; /* Ensure container fills the viewport height */
       background-image: url('bg.jpg');
       background-size: cover;
       background-position: center;
-      padding: 0 20px;
+      padding: 20px;
     }
 
     .content {
-      width: 50%;
+      width: 100%; /* Take up full width on smaller screens */
       color: white;
+      text-align: center; /* Center content */
+      margin-bottom: 20px; /* Add some space between content */
     }
 
     .left-content {
-      text-align: left;
       background-image: url("textbg.jpg");
       background-size: cover;
       background-clip: text;
@@ -33,23 +40,30 @@
     }
 
     .right-content {
-      text-align: left;
+      margin-left: 0; /* Remove left margin */
     }
 
     h1 {
-      font-size: 80px;
-      margin-top: 0px;
-      margin-bottom: 50px;
+      font-size: 6vw; /* Responsive font size */
+      margin-top: 0; /* Remove default margin */
+      margin-bottom: 2vw; /* Responsive margin */
     }
 
     form {
       border: 1px solid white;
-      width: 600px; /* Adjust width as needed */
+      max-width: 100%; /* Adjust width to fit smaller screens */
+      width: 400px; /* Default width */
+      margin: 0 auto; /* Center form */
       padding: 20px;
       text-align: center;
       background-color: rgba(255, 255, 255, 0.3); /* Adjust background opacity */
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add a shadow */
+    }
+
+    input[type="file"] {
+      width: 100%; /* Take up full width */
+      margin-bottom: 10px; /* Add some space between elements */
     }
 
     input[type="submit"] {
@@ -60,11 +74,11 @@
       cursor: pointer;
       border-radius: 5px;
     }
-    label{
-        font-size: 20px;
-        color: white;
+
+    label {
+      font-size: 3vw; /* Responsive font size */
+      color: white;
     }
-   
   </style>
 </head>
 <body>
